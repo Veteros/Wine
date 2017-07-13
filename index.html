@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link href="assets/css/style.css" type="text/css" rel="stylesheet"/>
+			<title>Wine</title>
+		</head>
+		
+		<body>
+			<div class="backrgound">
+				<div class="blur"></div>
+				<div class="header">
+			
+				<div class="company">
+					<img src="assets/images/dom.png"/>
+				</div>
+				
+				<div class="navigation">
+								
+					<div class="foruser">
+						<div class="login">
+							<a href="#">Login</a>
+						</div>
+					<div class="divider"></div>
+						<div class="cart">
+							<a href="#">Cart</a>
+						</div>
+					</div>
+				
+				<div class="menu">
+					<ul>
+						<li><a href="#">Home</li></a>
+						<li><a href="#">Winery</li></a>
+						<li><a href="#">Our Wine</li></a>
+						<li><a href="#">Wine Club</li></a>
+						<li><a href="#">Events</li></a>
+					</ul>
+				</div>
+				
+				<!--Hamburger menu-->
+				<section>
+					<a href="#"  onclick="hamburger()" class="menu-trigger" id="menu01">
+					<span></span>
+					<span></span>
+					<span></span>
+					</a>
+				</section>
+				</div>
+				
+				
+
+			
+		
+				</div>
+			</div>
+			
+			
+			
+			
+			<div class="ham-menu" id="menu">
+			<div class="all">
+				<div class="foruser">
+					<div class="login">
+						<a href="#">Login</a>
+					</div>
+				<div class="divider"></div>
+					<div class="cart">
+						<a href="#">Cart</a>
+					</div>
+				</div>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Winery</a></li>
+					<li><a href="#">Our Wine</a></li>
+					<li><a href="#">Wine Club</a></li>
+					<li><a href="#">Events</a></li>
+				</ul>
+			</div>
+			</div>
+			<script type="text/javascript">
+				function hamburger(){
+				let nav = document.getElementById("menu01")
+				let menu = document.getElementById("menu")
+				nav.classList.toggle('active')
+				menu.classList.toggle('is-active')
+				return false;
+				}
+			</script>
+			
+		</body>
+	</html>
